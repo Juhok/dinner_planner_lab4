@@ -1,0 +1,63 @@
+.navbar-default {
+    background-color: #E1F15D;
+    border-color: #9A9A9A;
+    
+    background: rgba(225, 241, 93, 0.7);
+}
+
+h5, .h5 {
+    font-size: 14px;
+    color: grey;
+    font-weight: lighter;
+}
+
+body {
+    background-image: url("../images/family.jpg");
+    background-color: #cccccc;
+    no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.smvertcont {
+    margin-top: 0px;
+    padding-left: 55px;
+    padding-bottom: 40px;
+    background-color: #EDEDED;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    background: rgba(225, 255, 255, 0.8);
+}
+
+.smvertcontselect {
+    /* margin: 50px; */
+    margin-top: 0px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    background-color: #EDEDED;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    background: rgba(225, 255, 255, 0.8);
+}
+
+.mvertcontselect {
+    margin-top: 0px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    background-color: #EDEDED;
+    background: rgba(225, 255, 255, 0.8);
+
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #AF9C9C;
+}
