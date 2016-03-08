@@ -1,5 +1,32 @@
 //ExampleView Object constructor
 var OverviewView = function (container, model) {
+
+this.container = container;
+
+    string = "";
+
+    string = '<div class="col-xs-12 col-sm-12 col-md-8 mvertcontselect">'+
+'      <ul class="list-inline">'+
+'        <li><h2>My Dinner: <span id="numberOfGuests"></span> People</h2></li>'+
+'        <li>'+
+'          <div>'+
+'            <button id="backToSelectDish" input class="btn btn-default routing" data-state="selectSide">'+
+'              <span class="glyphicon glyphicon-backward" aria-hidden="true"></span> go back and Edit Dinner'+
+'            </button>'+
+'          </div>'+
+'        </li>'+
+'      </ul>'+
+'      <hr>'+
+'      <div class="row" id="menu"> </div>'+
+'      <p>Total: SEK <span id="totalPrice"></span></p>'+
+'      <hr>'+
+'      <br />'+
+'      <input id="printRecipeButton" class="btn btn-success routing" type="button" value="Print full recipe" data-state="instructions">'+
+'      <br />'+
+'      <br />'+
+'    </div>';
+
+this.container.html(string);
 	
     // View 5/6 Screen for overview
 	

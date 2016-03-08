@@ -7,13 +7,14 @@ var IndexView = function (container, model) {
 
 	// Get all the relevant elements of the view (ones that show data
     // and/or ones that responed to interaction)
-	this.paragraph = container.find("#paragraph");
+	this.container = container;
 	this.numberOfGuests = container.find("#numberOfGuests");
 	this.plusButton = container.find("#plusGuest");
 	this.minusButton = container.find("#minusGuest");
 	this.createDinnerButton = container.find("#createDinner");
 
-	this.paragraph.html('<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p><br /><h4>Start quickly!</h4>');
+
+	this.container.html('<div class="col-xs-12 col-md-6 smvertcontselect"> <h2>A Home Dinner Service</h2> <hr> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p> <input id="createDinner"  class="btn btn-default routing" type="button" value="Create new dinner" data-state="selectSide"> <br /> <br /> </div>');
 	this.numberOfGuests.html(model.getNumberOfGuests());
 	
 	model.addObserver(this);
@@ -31,3 +32,5 @@ var IndexView = function (container, model) {
 
 
 }
+
+    

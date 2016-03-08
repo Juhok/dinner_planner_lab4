@@ -10,281 +10,56 @@
    <link rel="stylesheet" href="style/style.css">
    <style>
    </style>
-</head>
-<body>
-	<nav class="navbar navbar-default">
-		<div class="container">
-			<a href="#" class="navbar-brand routing" data-state="home">HOMELETTE</a>  <h3> <h5> From the best chefs in the world directly into your kitchen </h5>  </h3>
-		</div>
-	</nav>
-	<!-- first page starts -->
-  <div id="indexView">
-    <div class="col-xs-12 col-md-6 smvertcontselect">
-     <h2>A Home Dinner Service</h2>
-     <hr>
-     <span id="paragraph"></span>
-     <input id="createDinner"  class="btn btn-default routing" type="button" value="Create new dinner" data-state="selectSide">
-     <br />
-     <br />
+ </head>
+ <body>
+   <nav class="navbar navbar-default">
+    <div class="container">
+     <a href="#" class="navbar-brand routing" data-state="home">HOMELETTE</a>  <h3> <h5> From the best chefs in the world directly into your kitchen </h5>  </h3>
+   </div>
+ </nav>
+ <!-- first page starts -->
+ <div id="indexView">
  </div>
-</div>
-<!-- first page ends -->
-<!-- sideview starts -->
-<div id = "sideView">
-	<div class="col-xs-12 col-md-2 smvertcontselect">
-    <h2>My Dinner</h2>
-    <ul class="list-inline">
-      <li><h4>People</h4></li>
-      <li>
-     
-     <div id="exampleView">
-      <div>
-       Number of guests: <span id="numberOfGuests"></span>
-     </div>
-     <div>
-       <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
-       <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-     </div>
-   </div>
-
-
-      </li>
-    </ul>  
-    <hr>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <td ><h5>Dish Name</h5></td>
-          <td ><h5>Cost</h5></td>
-        </tr>
-      </thead>
-      <tbody id="dishCell" class="routing">
-      </tbody>
-    </table>
-    <hr>
-    <div>
-     <ul class="list-inline">
-       <li class="pull-right"><p>SEK</p></li>
-       <li class="pull-right"><p> <span id="totalCost"></span> </p></li>
-     </ul>
-   </div>
-   <input id="confirmDinner" class="btn btn-primary routing" type="button" value="Confirm Dinner" data-state="overview">
+ <!-- first page ends -->
+ <!-- sideview starts -->
+ <div id = "sideView">
  </div>
-</div>
-<!-- sideview ends -->
-<!-- selectview starts -->
-<div id="selectView">
-  <div class="col-xs-12 col-sm-12 col-md-8 mvertcontselect">
-    <h2>Select Dish</h2>
-    <hr>
-    <form class="form-inline">
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for...">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Go!</button>
-          </span>
-        </div><!-- /input-group -->
-      </div><!-- /.col-lg-3 -->
-      <div class="btn-group">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Browse Menus  
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li><a href="#"><span id ="starterSelect">Starter</span></a></li>
-          <li><a href="#"><span id="mainDishSelect">Main Dish</span></a></li>
-          <li><a href="#"><span id="dessertSelect">Dessert</span></a></li>
-        </ul>
-      </div>
-    </form>
-    <hr>
-    <br />
-    <br />
-    <div class="row routing" id="dishItem" data-state="detailsSide">
-    </div>
-  </div>
-</div>
-<!-- selectview ends -->
-<!-- Details.html starts -->
-<div id="detailsView">
-  <div class="col-xs-12 col-sm-12 col-md-8 mvertcontselect">
-    <h2>Lasagne</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <img id="drag2" src="" alt="lasagne" draggable="true" ondragstart="drag(event)" width="95%" hight="95%"/>
-        <br />
-        <br />
-        <p>
-          Lasagne originated in Italy, traditionally ascribed to the city of Naples (Campania), where the first modern recipe was created in the Middle Ages and published in Liber de Coquina (The Book of Cookery), and became a traditional dish.
-        </p>
-        <br />
-        <div>
-          <button id = "backToSelectDish" input class="btn btn-default routing" data-state="selectSide">
-            <span class="glyphicon glyphicon-backward" aria-hidden="true"></span> Back to selected dish </button>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="panel panel-default">
-            <!-- Default panel contents -->
-            <div class="panel-heading"><h4><span id="numberOfGuests"></span></h4></div>
-            <!-- Table -->
-            <table class="table" id="ingTable">
-            </table>
-          </div>
-          <ul class="list-inline">
-            <li> <button id="confirmDish" class="btn-default routing" data-state="selectSide" type="button">Confirm Dish</button></li>
-            <li class="pull-right"><p>SEK</p></li>
-            <li class="pull-right"><div><span id="total"></span></div></li>
-          </ul>
-        </div>
-      </div>
-      <h2>Preparation</h2>
-      <p>
-       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-     </p>
-   </div>
+ <!-- sideview ends -->
+ <!-- selectview starts -->
+ <div id="selectView">
+ </div>
+ <!-- selectview ends -->
+ <!-- Details.html starts -->
+ <div id="detailsView">
  </div>
  <!-- Detailsview ends -->
  <!-- overviewView starts -->
  <div id="overviewView">
-  <div class="row">
-    <div class="col-md-10 smvertcont">
-      <ul class="list-inline">
-        <li><h2>My Dinner: <span id="numberOfGuests"></span> People</h2></li>
-        <li>
-          <div>
-
-            <!-- <input id="confirmDinner" class="btn btn-default routing" type="button" value="Confirm Dinner" data-state="overview"> -->
-
-            <button id="backToSelectDish" input class="btn btn-default routing" data-state="selectSide">
-
-
-
-
-              <span class="glyphicon glyphicon-backward" aria-hidden="true"></span> go back and Edit Dinner
-            </button>
-          </div>
-        </li>
-      </ul>
-      <hr>
-      <div class="row" id="menu"> </div>
-      <p>Total: SEK <span id="totalPrice"></span></p>
-      <hr>
-      <br />
-
-
-
-      <input id="printRecipeButton" class="btn btn-success routing" type="button" value="Print full recipe" data-state="instructions">
-
-
-
-      <br />
-      <br />
-    </div>
-  </div>
-</div>
-<!-- overviewView ends -->
-<!-- instructionsview starts -->
-<div id="instructionsView">
-  <div class="row">
-    <div class="col-md-10 smvertcont">
-      <ul class="list-inline">
-        <li><h2>My Dinner: 4 People</h2></li>
-        <li>
-          <div>
-
-
-
-
-
-
-            <button id="backToOverView" input class="btn btn-default routing" data-state="overview">
-
-
-
-
-
-
-
-
-
-
-              <span class="glyphicon glyphicon-backward" aria-hidden="true"></span> go back and Edit Dinner
-            </button>
-          </div>
-        </li>
-      </ul>
-      <hr>
-
-      <div class="row">
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-lg-12 col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="#" class="thumbnail">
-                  <img src="images/meatballs.jpg" alt="Mountain View">
-                </a>
-                <div class="caption">
-                  <h3>Lasagne</h3>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12 col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="#" class="thumbnail">
-                  <img src="images/icecream.jpg" alt="Mountain View">
-                </a>
-                <div class="caption">
-                  <h3>Meatballs</h3>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12 col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="#" class="thumbnail">
-                  <img src="images/toast.jpg" alt="Mountain View">
-                </a>
-                <div class="caption">
-                  <h3>Soda</h3>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <h2>Preparation</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-          </p>
-        </div>
-      </div>
-    </div>
-    <hr>
-  </div>
-</div>
-<!-- InstrustionView ends -->
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery.js"></script>
-<!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<!-- The application JavaScript code -->
-<script src="js/app.js"></script>
-<script src="js/model/dinnerModel.js"></script>
-<script src="js/view/exampleView.js"></script>
-<script src="js/view/sideView.js"></script>
-<script src="js/view/selectView.js"></script>
-<script src="js/view/detailsView.js"></script>
-<script src="js/view/overviewView.js"></script>
-<script src="js/view/instructionsView.js"></script>
-<script src="js/view/indexView.js"></script>
-<script src="js/controller/indexViewController.js"></script>
-<script src="js/controller/sideViewController.js"></script>
-<script src="js/controller/exampleViewController.js"></script>
-<script src="js/controller/selectViewController.js"></script>
-<script src="js/controller/detailsViewController.js"></script>
-<script src="js/controller/overallStateController.js"></script>
+ </div>
+ <!-- overviewView ends -->
+ <!-- instructionsview starts -->
+ <div id="instructionsView">
+ </div>
+ <!-- InstrustionView ends -->
+ <!-- jQuery -->
+ <script src="https://code.jquery.com/jquery.js"></script>
+ <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+ <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+ <!-- The application JavaScript code -->
+ <script src="js/app.js"></script>
+ <script src="js/model/dinnerModel.js"></script>
+ <script src="js/view/exampleView.js"></script>
+ <script src="js/view/sideView.js"></script>
+ <script src="js/view/selectView.js"></script>
+ <script src="js/view/detailsView.js"></script>
+ <script src="js/view/overviewView.js"></script>
+ <script src="js/view/instructionsView.js"></script>
+ <script src="js/view/indexView.js"></script>
+ <script src="js/controller/indexViewController.js"></script>
+ <script src="js/controller/sideViewController.js"></script>
+ <script src="js/controller/exampleViewController.js"></script>
+ <script src="js/controller/selectViewController.js"></script>
+ <script src="js/controller/detailsViewController.js"></script>
+ <script src="js/controller/overallStateController.js"></script>
 </body>
 </html>

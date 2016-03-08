@@ -1,18 +1,62 @@
 //ExampleView Object constructor
 var SelectView = function (container, model) {
 
+    this.container = container;
+
+    string = "";
+
+    string = '<div class="col-xs-12 col-sm-12 col-md-8 mvertcontselect">'+
+'    <h2>Select Dish</h2>'+
+'    <hr>'+
+'    <form class="form-inline">'+
+'      <div class="col-lg-3 col-md-6 col-xs-12">'+
+'        <div class="input-group">'+
+'          <input type="text" class="form-control" placeholder="Search for...">'+
+'          <span class="input-group-btn">'+
+'            <button class="btn btn-default" type="button">Go!</button>'+
+'          </span>'+
+'        </div>'+
+'      </div>'+
+'      <div class="btn-group">'+
+'        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Browse Menus  '+
+'          <span class="caret"></span>'+
+'        </button>'+
+'        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">'+
+'          <li><a href="#"><span id ="starterSelect">Starter</span></a></li>'+
+'          <li><a href="#"><span id="mainDishSelect">Main Dish</span></a></li>'+
+'          <li><a href="#"><span id="dessertSelect">Dessert</span></a></li>'+
+'        </ul>'+
+'      </div>'+
+'    </form>'+
+'    <hr>'+
+'    <br />'+
+'    <br />'+
+'    <div class="row routing" id="dishItem" data-state="detailsSide">'+
+'    </div>'+
+'  </div>';
+
+
+this.container.html(string);
+
+
+
+
     // View 3/6
     // Implement in Screen for select
 
     this.dishItem = container.find("#dishItem");
     
-    console.log("dishItem" +dishItem);
+    // console.log("dishItem" +dishItem);
 
     var dishItemString = container.find('#dishItem').tostring;
 
     this.starterSelect = container.find("#starterSelect");
     this.mainDishSelect = container.find("#mainDishSelect");
     this.dessertSelect = container.find("#dessertSelect");
+
+
+
+
 
     this.getDishItem = function () {
         return this.dishItem;

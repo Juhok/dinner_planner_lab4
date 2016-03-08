@@ -1,9 +1,57 @@
 //ExampleView Object constructor
 var SideView = function (container, model) {
+
+    // I am using this convertor to convert the HTML to javascript variable
+    // http://pojo.sodhanalibrary.com/ConvertToVariable
+    // Juho
+
+    this.container = container;
+
+    string = "";
+
+    string = '<div class="col-xs-12 col-md-2 smvertcontselect">'+
+'    <h2>My Dinner</h2>'+
+'    <ul class="list-inline">'+
+'    '+
+'      <li>'+
+'     <div id="exampleView">'+
+'      <div>'+
+'       Number of guests: <span id="numberOfGuests"></span>'+
+'     </div>'+
+'     <div>'+
+'       <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>'+
+'       <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>'+
+'     </div>'+
+'   </div>'+
+'      </li>'+
+'    </ul>  '+
+'    <hr>'+
+'    <table class="table table-bordered">'+
+'      <thead>'+
+'        <tr>'+
+'          <td ><h5>Dish Name</h5></td>'+
+'          <td ><h5>Cost</h5></td>'+
+'        </tr>'+
+'      </thead>'+
+'      <tbody id="dishCell" class="routing">'+
+'      </tbody>'+
+'    </table>'+
+'    <hr>'+
+'    <div>'+
+'     <ul class="list-inline">'+
+'       <li class="pull-right"><p>SEK</p></li>'+
+'       <li class="pull-right"><p> <span id="totalCost"></span> </p></li>'+
+'     </ul>'+
+'   </div>'+
+'   <input id="confirmDinner" class="btn btn-primary routing" type="button" value="Confirm Dinner" data-state="overview">'+
+' </div>';
+    
+this.container.html(string);
 	
     // View 2/6
     // Implement in Screen for Select and Screen for Details
 
+    
     this.totalCost = container.find("#totalCost");
     this.dishCell = container.find("#dishCell");
     this.ConfirmDinner = container.find("#confirmDinner");
