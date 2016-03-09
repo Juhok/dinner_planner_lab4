@@ -56,6 +56,8 @@ this.container.html(string);
             + "</div>"
             + "</div>";
         }
+
+        return htmlMenu;
     }
 
     // Update function. Called from the model.

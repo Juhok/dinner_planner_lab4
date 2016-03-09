@@ -26,7 +26,7 @@ var SideView = function (container, model) {
 '      </li>'+
 '    </ul>  '+
 '    <hr>'+
-'    <table class="table table-bordered">'+
+'    <table class="table">'+
 '      <thead>'+
 '        <tr>'+
 '          <td ><h5>Dish Name</h5></td>'+

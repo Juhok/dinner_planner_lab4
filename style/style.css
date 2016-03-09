@@ -40,10 +40,10 @@ body {
     padding-bottom: 40px;
     background-color: #EDEDED;
     border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;
+    /*border-top-right-radius: 1em;*/
+    /*border-bottom-right-radius: 1em;*/
     border-bottom-left-radius: 1em;
-    background: rgba(225, 255, 255, 0.8);
+    background: rgba(217, 246, 247, 0.65);
 }
 
 .mvertcontselect {
@@ -52,6 +52,8 @@ body {
     padding-bottom: 40px;
     background-color: #EDEDED;
     background: rgba(225, 255, 255, 0.8);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
 
 }
 
