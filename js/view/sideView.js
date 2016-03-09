@@ -43,7 +43,7 @@ var SideView = function (container, model) {
 '       <li class="pull-right"><p> <span id="totalCost"></span> </p></li>'+
 '     </ul>'+
 '   </div>'+
-'   <input id="confirmDinner" class="btn btn-primary routing" type="button" value="Confirm Dinner" data-state="overview">'+
+'   <input id="confirmDinner" class="btn btn-success routing" type="button" value="Confirm Dinner" data-state="overview">'+
 ' </div>';
     
 this.container.html(string);

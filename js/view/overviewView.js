@@ -11,7 +11,7 @@ this.container = container;
 '        <li>'+
 '          <div>'+
 '            <button id="backToSelectDish" input class="btn btn-default routing" data-state="selectSide">'+
-'              <span class="glyphicon glyphicon-backward" aria-hidden="true"></span> go back and Edit Dinner'+
+'              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> go back and Edit Dinner'+
 '            </button>'+
 '          </div>'+
 '        </li>'+

@@ -13,7 +13,7 @@ string = '<div class="row">'+
 '        <li>'+
 '          <div>'+
 '            <button id="backToOverView" input class="btn btn-default routing" data-state="overview">'+
-'              <span class="glyphicon glyphicon-backward" aria-hidden="true"></span> go back and Edit Dinner'+
+'              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> go back and Edit Dinner'+
 '            </button>'+
 '          </div>'+
 '        </li>'+

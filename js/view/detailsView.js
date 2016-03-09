@@ -30,7 +30,7 @@ this.container = container;
 '            </table>'+
 '          </div>'+
 '          <ul class="list-inline">'+
-'            <li> <button id="confirmDish" class="btn-default routing" data-state="selectSide" type="button">Confirm Dish</button></li>'+
+'            <li> <button id="confirmDish" class="btn btn-primary routing" data-state="selectSide" type="button">Confirm Dish</button></li>'+
 '            <li class="pull-right"><p>SEK</p></li>'+
 '            <li class="pull-right"><div><span id="total"></span></div></li>'+
 '          </ul>'+
