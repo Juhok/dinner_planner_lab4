@@ -112,7 +112,9 @@ model.addObserver(this);
  
      // Update function. Called from the model.
   	this.update = function (model, arg) {
+       //   if (arg == "newGuestsNumber"){
   	    this.instructions.html(this.updateInstructions(model));
+      //}
   	}
  		
      

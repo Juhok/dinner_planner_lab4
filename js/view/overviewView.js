@@ -64,9 +64,13 @@ this.container.html(string);
     this.update = function (model, arg) {
            console.log("Overviewview UPDATED!")
            // Update this view
+
+           if (arg == "newGuestsNumber"){
            this.numberOfGuests.html(model.getNumberOfGuests());
            this.menu.html(this.updateHtmlMenu(model));
            this.totalPrice.html(model.getTotalMenuPrice());
+
+       }
         
     }
 

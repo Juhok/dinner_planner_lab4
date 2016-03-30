@@ -1,6 +1,9 @@
 //DinnerModel Object constructor
 var DinnerModel = function () {
 
+
+    this.apiKey = "H9n1zb6es492fj87OxDtZM9s5sb29rW3";
+
     //Observable observer implementation
     this.observers = [];
 
@@ -163,24 +166,36 @@ var DinnerModel = function () {
 
         // HERE Listen and filter function for search bar, then add listener to the button
 
+        // LAB 4 COMMENTED OUT
+        // LAB 4 COMMENTED OUT
+        // LAB 4 COMMENTED OUT
+        // LAB 4 COMMENTED OUT
+        // LAB 4 COMMENTED OUT
 
-        this.getAllDishes = function (type, filter) {
-            return $(dishes).filter(function (index, dish) {
-                var found = true;
-                if (filter) {
-                    found = false;
-                    $.each(dish.ingredients, function (index, ingredient) {
-                        if (ingredient.name.indexOf(filter) != -1) {
-                            found = true;
-                        }
-                    });
-                    if (dish.name.indexOf(filter) != -1) {
-                        found = true;
-                    }
-                }
-                return dish.type == type && found;
-            });
-        }
+
+        // this.getAllDishes = function (type, filter) {
+        //     return $(dishes).filter(function (index, dish) {
+        //         var found = true;
+        //         if (filter) {
+        //             found = false;
+        //             $.each(dish.ingredients, function (index, ingredient) {
+        //                 if (ingredient.name.indexOf(filter) != -1) {
+        //                     found = true;
+        //                 }
+        //             });
+        //             if (dish.name.indexOf(filter) != -1) {
+        //                 found = true;
+        //             }
+        //         }
+        //         return dish.type == type && found;
+        //     });
+        // }
+
+        // LAB 4 COMMENTED OUT
+        // LAB 4 COMMENTED OUT
+        // LAB 4 COMMENTED OUT
+        // LAB 4 COMMENTED OUT
+        // LAB 4 COMMENTED OUT
 
         // Returns image of dish
         this.getImage = function (dish) {
@@ -198,13 +213,52 @@ var DinnerModel = function () {
         }
         
         //function that returns a dish of specific ID
-        this.getDish = function (id) {
-            for (key in dishes) {
-                if (dishes[key].id == id) {
-                    return dishes[key];
-                }
+        // this.getDish = function (id) {
+        //     for (key in dishes) {
+        //         if (dishes[key].id == id) {
+        //             return dishes[key];
+        //         }
+        //     }
+        // }
+
+        // LAB 4 DATA
+        // LAB 4 DATA
+        // LAB 4 DATA
+
+        this.getDish = function(id){
+        console.log("getDish id = "+id);
+        this.notifyObservers("loadingDish");
+        // var apiKey = "H9n1zb6es492fj87OxDtZM9s5sb29rW3";
+        var dishID = id;
+        var url = "http://api.bigoven.com/recipe/"+id+"?api_key="+self.apiKey;
+        $.ajax({
+            type: "GET",
+            dataType: 'json',
+            cache: false,
+            url: url,
+            data: {
+                pg: 1,
+                rpp: 10
+            },
+            success: function (data) {
+                //searchDishes = [];
+                console.log(data);
+                //self.keepPreparedDish(data);
+                //self.notifyObservers("dishPrepared");
+                //return data;
+            },
+            error: function(){
+                self.notifyObservers("GetDishError");
             }
-        }
+        });
+    }
+
+
+
+
+
+
+
         // function that returns the price of a dish depending on the number of guests
         this.getDishCost = function (id) {
 

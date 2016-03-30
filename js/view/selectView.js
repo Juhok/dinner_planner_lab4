@@ -103,7 +103,7 @@ this.container.html(string);
     this.update = function (model, arg) {
         if (arg == "selectView dropDown") {
             console.log("In selectView update function");
-            this.dishItem.html(this.createDishSelection(model));
+            // this.dishItem.html(this.createDishSelection(model));
         }
     }
 
