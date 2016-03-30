@@ -2,7 +2,7 @@
 var DinnerModel = function () {
 
 
-    this.apiKey = "H9n1zb6es492fj87OxDtZM9s5sb29rW3";
+    this.apiKey = "F088t4s6QGI5T92W3Nwiju8jFU52J8SP";
 
     //Observable observer implementation
     this.observers = [];
@@ -228,7 +228,7 @@ var DinnerModel = function () {
         this.getDish = function(id){
         console.log("getDish id = "+id);
         this.notifyObservers("loadingDish");
-        // var apiKey = "H9n1zb6es492fj87OxDtZM9s5sb29rW3";
+        // var apiKey = "F088t4s6QGI5T92W3Nwiju8jFU52J8SP";
         var dishID = id;
         var url = "http://api.bigoven.com/recipe/"+id+"?api_key="+self.apiKey;
         $.ajax({
